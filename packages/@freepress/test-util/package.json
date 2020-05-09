@@ -1,0 +1,8 @@
+{
+  "name": "@freepress/test-util",
+  "main": "index.js",
+  "version": "0.2.0",
+  "dependencies": {
+    "@freepress/util": "^0.2.0"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "@freepress/theme-default",
+  "version": "0.2.0",
+  "description": "The default theme of FreePress",
+  "dependencies": {
+    "antd": "^3.24.2",
+    "axios": "^0.18.0",
+    "nprogress": "^0.2.0",
+    "react-media": "next"
+  }
+}

@@ -1,0 +1,82 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+
+defaults: &defaults
+  environment:
+    - APP_VERSION: $CIRCLE_SHA1
+  working_directory: ~/project/freepress
+  docker:
+    # specify the version you desire here
+    - image: circleci/node:10.15.2
+
+jobs:
+  # install dependencies
+  install-dependencies:
+    <<: *defaults
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-deps-{{ checksum "yarn.lock" }}
+            - v1-deps
+
+      - run:
+          name: 'Install dependencies'
+          command: yarn && yarn bs
+
+      - save_cache:
+          key: v1-deps-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+
+      - persist_to_workspace:
+          root: ~/project/freepress
+          paths:
+            - node_modules
+            - packages/*/node_modules
+            - packages/@freepress/*/node_modules
+
+  # test
+  run-tests:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project/freepress
+      - run:
+          name: 'Run tests'
+          command: yarn test
+
+  # build docs and upload to server
+  build-docs:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project/freepress
+
+      - run: yarn generate-with-prefix
+      - run: ssh -o "StrictHostKeyChecking no" root@$DOCKER_IP "~/freepress/before-dep.sh"
+      - run: scp -o "StrictHostKeyChecking no" -r packages/docs/docs/.freepress/dist/* root@$DOCKER_IP:~/freepress/tmp
+      - run: ssh -o "StrictHostKeyChecking no" root@$DOCKER_IP "~/freepress/after-dep.sh"
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - install-dependencies
+      - run-tests:
+          requires:
+            - install-dependencies
+      - build-docs:
+          requires:
+            - install-dependencies
+          filters:
+            branches:
+              only:
+                - 'master'
+          context: aliyun

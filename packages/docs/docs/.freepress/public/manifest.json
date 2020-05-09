@@ -1,0 +1,20 @@
+{
+  "name": "freepress",
+  "short_name": "freepress",
+  "icons": [
+    {
+      "src": "/freepress/logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/freepress/logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/freepress/index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#3eaf7c"
+}

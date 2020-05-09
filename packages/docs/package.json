@@ -1,0 +1,17 @@
+{
+  "name": "docs",
+  "version": "0.2.1",
+  "private": true,
+  "keywords": [],
+  "license": "MIT",
+  "author": "",
+  "scripts": {
+    "build": "freepress build",
+    "dev": "freepress dev",
+    "generate": "freepress generate",
+    "serve": "freepress serve"
+  },
+  "devDependencies": {
+    "@freepress/cli": "^0.2.1"
+  }
+}
