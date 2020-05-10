@@ -1,6 +1,6 @@
 {
   "name": "freepress",
-  "version":"0.1.3",
+  "version":"0.1.4",
   "description": "一款静态文档生成工具",
   "workspaces": [
     "packages/@freepress/*",
