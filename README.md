@@ -5,9 +5,9 @@
 一款使用Ant Design构建，由React.js驱动的静态网站生成器.  🎨
 </p>
 <p align="center">
-  <a href="https://www.npmjs.com/package/@freepress/core"><img src="https://img.shields.io/npm/v/@freepress/core.svg" alt="Version"></a><a href="https://circleci.com/gh/DeepSea1989/freepress/tree/master"><img src="https://circleci.com/gh/DeepSea1989/freepress/tree/master.png?style=shield" alt="Build Status"></a> 
-  <a href="https://www.npmjs.com/package/@freepress/core"><img src="https://img.shields.io/npm/l/@freepress/core.svg" alt="License"></a>
-<a href="https://www.npmjs.com/package/@freepress/core"><img src="https://img.shields.io/npm/dm/@freepress/core.svg" alt="Download"></a>
+  <a href="https://www.npmjs.com/package/freepress/"><img src="https://img.shields.io/npm/v/freepress.svg" alt="Version"></a><a href="https://circleci.com/gh/DeepSea1989/freepress/tree/master"><img src="https://circleci.com/gh/DeepSea1989/freepress/tree/master.png?style=shield" alt="Build Status"></a> 
+  <a href="https://www.npmjs.com/package/freepress"><img src="https://img.shields.io/npm/l/freepress.svg" alt="License"></a>
+<a href="https://www.npmjs.com/package/freepress"><img src="https://img.shields.io/npm/dm/freepress.svg" alt="Download"></a>
 <a href="https://github.com/DeepSea1989/freepress"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="prettier"></a>
 </p>
 
@@ -61,9 +61,7 @@ freepress build
 freepress generate
 ```
 
-## 文档
 
-可以参考官网上的[向导一节](https://www.yvescoding.com/rcpress/guide/getting-started)
 
 ## 感谢
 

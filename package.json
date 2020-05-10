@@ -1,6 +1,7 @@
 {
   "name": "freepress",
-  "version":"0.1.1",
+  "version":"0.1.3",
+  "description": "一款静态文档生成工具",
   "workspaces": [
     "packages/@freepress/*",
     "packages/docs"
@@ -19,6 +20,26 @@
     "test": "jest --config jest.config.js --collectCoverage",
     "test-u": "jest -u --collectCoverage"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeepSea1989/FreePress.git"
+  },
+  "keywords": [
+    "freepress",
+    "react",
+    "markdown"
+  ],
+  "engines": {
+    "node": ">= 12.16.2",
+    "npm": ">= 6.14.4",
+    "webpack": ">= 4.0.0"
+  },
+  "author": "DeepSea1989",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeepSea1989/FreePress/issues"
+  },
+  "homepage": "https://github.com/DeepSea1989/FreePress#readme",
   "devDependencies": {
     "babel7-jest": "^1.0.1",
     "conventional-changelog-cli": "2.0.23",
