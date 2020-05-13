@@ -1,7 +1,7 @@
 {
   "name": "@freepress/core",
-  "version": "0.2.1",
-  "description": "A static website generator build with Ant Design",
+  "version": "0.1.4",
+  "description": "一款静态的文档构建工具",
   "homepage": "https://github.com/DeepSea1989/freepress",
   "repository": {
     "type": "git",
@@ -22,9 +22,9 @@
     "@hot-loader/react-dom": "^16.9.0",
     "@loadable/babel-plugin": "^5.10.0",
     "@loadable/server": "^5.10.2",
-    "@freepress/markdown": "^0.2.0",
-    "@freepress/test-util": "^0.2.0",
-    "@freepress/util": "^0.2.0",
+    "@freepress/markdown": "^0.1.0",
+    "@freepress/test-util": "^0.1.0",
+    "@freepress/util": "^0.1.0",
     "@freepress/webpack": "^0.2.0",
     "@types/classnames": "^2.2.7",
     "@types/react-dom": "^16.8.4",

@@ -280,7 +280,7 @@ module.exports = function createBaseConfig(
       BASE_URL: JSON.stringify(siteConfig.base || '/'),
       GA_ID: siteConfig.ga ? JSON.stringify(siteConfig.ga) : false,
       SW_ENABLED: !!siteConfig.serviceWorker,
-      freepress_VERSION: JSON.stringify(require('@freepress/core/package.json').version),
+      FREEPRESS_VERSION: JSON.stringify(require('@freepress/core/package.json').version),
       LAST_COMMIT_HASH: JSON.stringify(getLastCommitHash()),
       IS_SERVER: isServerBundle
     }

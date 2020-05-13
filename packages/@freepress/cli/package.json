@@ -1,7 +1,7 @@
 {
   "name": "@freepress/cli",
-  "version": "0.2.1",
-  "description": "Create a website based on Ant Design",
+  "version": "0.1.2",
+  "description": "文档构建命令行工具",
   "keywords": [
     "freepress"
   ],
@@ -11,9 +11,9 @@
     "freepress": "index.js"
   },
   "dependencies": {
-    "@freepress/core": "^0.2.1",
-    "@freepress/theme-default": "^0.2.0",
-    "@freepress/util": "^0.2.0",
+    "@freepress/core": "^0.1.0",
+    "@freepress/theme-default": "^0.1.0",
+    "@freepress/util": "^0.1.0",
     "chalk": "2.4.2",
     "commander": "2.19.0",
     "cross-spawn": "6.0.5",

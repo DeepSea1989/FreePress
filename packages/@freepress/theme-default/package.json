@@ -1,7 +1,7 @@
 {
   "name": "@freepress/theme-default",
-  "version": "0.2.0",
-  "description": "The default theme of FreePress",
+  "version": "0.1.1",
+  "description": "FreePress默认主题",
   "dependencies": {
     "antd": "^3.24.2",
     "axios": "^0.18.0",

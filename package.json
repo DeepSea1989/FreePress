@@ -1,7 +1,5 @@
 {
-  "name": "freepress",
-  "version":"0.1.4",
-  "description": "一款静态文档生成工具",
+  "private":true,
   "workspaces": [
     "packages/@freepress/*",
     "packages/docs"
@@ -10,19 +8,15 @@
     "bs": "lerna bootstrap",
     "cl": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "lerna clean && rm -rf node_modules",
-    "dev": "yarn workspace docs dev",
-    "generate": "yarn workspace docs generate",
-    "generate-with-prefix": "cross-env base=/freepress  yarn generate",
+    "dev": "./packages/docs/freepress dev",
+    "generate": "./packages/docs/freepress generate",
+    "generate-with-prefix": "cross-env base=/freepress && npm run generate",
     "pre-pub": "lerna publish --conventional-commits --canary",
     "pub": "lerna publish --conventional-commits",
-    "serve": "yarn workspace docs serve",
-    "build": "yarn workspace docs build",
+    "serve": "./packages/docs/freepress serve",
+    "build": "./packages/docs/freepress build",
     "test": "jest --config jest.config.js --collectCoverage",
     "test-u": "jest -u --collectCoverage"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DeepSea1989/FreePress.git"
   },
   "keywords": [
     "freepress",
@@ -34,12 +28,6 @@
     "npm": ">= 6.14.4",
     "webpack": ">= 4.0.0"
   },
-  "author": "DeepSea1989",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/DeepSea1989/FreePress/issues"
-  },
-  "homepage": "https://github.com/DeepSea1989/FreePress#readme",
   "devDependencies": {
     "babel7-jest": "^1.0.1",
     "conventional-changelog-cli": "2.0.23",

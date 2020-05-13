@@ -9,6 +9,7 @@ const path = require('path');
 const chalk = require('chalk');
 const webpack = require('webpack');
 const serve = require('webpack-dev-server');
+const express = require('express');
 
 const {
   WebpackLogPlugin,
@@ -241,7 +242,6 @@ class App {
     log();
 
     const http = require('http');
-    const express = require('express');
     const compression = require('compression');
     const Render = require('../pageRender');
 
