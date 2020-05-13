@@ -1,5 +1,5 @@
 {
-  "private":true,
+  "private": true,
   "workspaces": [
     "packages/@freepress/*",
     "packages/docs"
@@ -107,7 +107,6 @@
     "tar-pack": "3.4.1",
     "tmp": "0.0.33",
     "validate-npm-package-name": "3.0.0",
-
     "@babel/cli": "^7.0.0",
     "@babel/core": "^7.0.0",
     "@babel/generator": "^7.0.0",
@@ -150,15 +149,12 @@
     "unist-util-select": "^2.0.2",
     "webpack-hot-middleware": "^2.25.0",
     "workbox-build": "^3.1.0",
-
     "@mdx-js/mdx": "^1.0.0-rc.4",
     "@mdx-js/react": "^1.0.0-rc.5",
     "mdast-util-toc": "",
     "parse-numeric-range": "^0.0.2",
-
     "antd": "^3.24.2",
     "react-media": "next",
-
     "gray-matter": "^4.0.2",
     "node-emoji": "^1.8.1",
     "debug": "^4.1.1"
