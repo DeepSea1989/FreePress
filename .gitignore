@@ -30,8 +30,8 @@ dist
 /es
 elasticsearch-*
 config/base.yaml
-.vscode 
-/coverage 
+.vscode
+/coverage
 components/**/*.js
 components/**/*.jsx
 !components/**/__tests__/*.js
@@ -40,6 +40,5 @@ config/components/lib
 config/components/dist
 config/components/es
 config/components/package.json
-**/package-lock.json
 
 .temp
