@@ -74,6 +74,7 @@ jobs:
       - run: ssh -o "StrictHostKeyChecking no" root@$DOCKER_IP "~/freepress/before-dep.sh"
       - run: scp -o "StrictHostKeyChecking no" -r packages/docs/docs/.freepress/dist/* root@$DOCKER_IP:~/freepress/tmp
       - run: ssh -o "StrictHostKeyChecking no" root@$DOCKER_IP "~/freepress/after-dep.sh"
+      - run: echo $PIPELINE_FINISHED
 
 workflows:
   version: 2
@@ -93,4 +94,4 @@ workflows:
             branches:
               only:
                 - 'master'
-          context: aliyun
+          context: success
