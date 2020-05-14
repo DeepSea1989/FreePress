@@ -40,6 +40,17 @@ jobs:
             - packages/*/node_modules
             - packages/@freepress/*/node_modules
 
+  # Snapshots refresh
+  run-refresh:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: ~/project/freepress
+      - run:
+          name: 'Run refresh'
+          command: npm run test-u
+
   # test
   run-tests:
     <<: *defaults
@@ -69,6 +80,9 @@ workflows:
   build:
     jobs:
       - install-dependencies
+      - run-refresh:
+          requires:
+            - install-dependencies
       - run-tests:
           requires:
             - install-dependencies
