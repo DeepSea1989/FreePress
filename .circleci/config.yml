@@ -86,6 +86,7 @@ workflows:
       - run-tests:
           requires:
             - install-dependencies
+            - run-refresh
       - build-docs:
           requires:
             - install-dependencies
