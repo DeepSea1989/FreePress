@@ -15,7 +15,7 @@
     "pub": "lerna publish --conventional-commits",
     "serve": "./packages/docs/freepress serve",
     "build": "./packages/docs/freepress build",
-    "test": "jest --config jest.config.js --collectCoverage",
+    "test": "jest --config jest.config.js --collectCoverage --updateSnapshot",
     "test-u": "jest -u --collectCoverage"
   },
   "keywords": [
