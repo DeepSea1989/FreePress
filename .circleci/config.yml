@@ -83,10 +83,10 @@ workflows:
       - run-refresh:
           requires:
             - install-dependencies
-      - run-tests:
-          requires:
-            - install-dependencies
-            - run-refresh
+        - run-tests:
+            requires:
+              - install-dependencies
+              - run-refresh
       - build-docs:
           requires:
             - install-dependencies
