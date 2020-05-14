@@ -9,7 +9,7 @@
     "cl": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "clean": "lerna clean && rm -rf node_modules",
     "dev": "./packages/docs/freepress dev",
-    "generate": "./packages/docs/freepress generate",
+    "generate": "cd ./packages/docs/ && freepress generate",
     "generate-with-prefix": "cross-env base=/freepress && npm run generate",
     "pre-pub": "lerna publish --conventional-commits --canary",
     "pub": "lerna publish --conventional-commits",
