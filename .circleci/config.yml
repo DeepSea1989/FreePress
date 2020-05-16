@@ -76,7 +76,7 @@ jobs:
 
       - run: npm run generate-with-prefix
       - run: echo $REMOTE_HOSTKEY
-      - run: echo "StrictHostKeyChecking no" > ~/.ssh/ssh_config
+      - run: echo "Host * \n StrictHostKeyChecking no" > ~/.ssh/ssh_config
       #- run: echo "StrictHostKeyChecking no" > /etc/ssh/ssh_config
       - run: echo $REMOTE_HOSTKEY > ~/.ssh/known_hosts
       - run: cat ~/.ssh/known_hosts
