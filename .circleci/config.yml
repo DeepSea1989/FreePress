@@ -76,9 +76,9 @@ jobs:
 
       - run: npm run generate-with-prefix
       - run: echo $REMOTE_HOSTKEY
-      - run: rm -rf ~/.ssh/id_rsa && rm -rf ~/.ssh/id_rsa.pub
-      - run: ssh-keygen -t rsa -C "deepsea1989@outlook.com" -N '' -f ~/.ssh/id_rsa -q
-      - run: ssh-copy-id -i ~/.ssh/id_rsa.pub root@119.3.77.250
+      #- run: rm -rf ~/.ssh/id_rsa && rm -rf ~/.ssh/id_rsa.pub
+      #- run: ssh-keygen -t rsa -C "deepsea1989@outlook.com" -N '' -f ~/.ssh/id_rsa -q
+      #- run: ssh-copy-id -i ~/.ssh/id_rsa.pub root@119.3.77.250
       - run: echo $REMOTE_HOSTKEY > ~/.ssh/known_hosts
       - run: cat ~/.ssh/known_hosts
       - run: ssh -o StrictHostKeyChecking=no root@119.3.77.250 "~/freepress/before-dep.sh"
