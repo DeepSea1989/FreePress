@@ -75,7 +75,7 @@ jobs:
             - "b3:48:fb:25:46:3c:3a:3a:b5:9c:fe:2d:b5:7f:aa:2a"
 
       - run: npm run generate-with-prefix
-      - run: echo $DOCKER_IP
+      - run: echo $DEMO
       - run: ssh -o "StrictHostKeyChecking no" root@$DOCKER_IP "~/freepress/before-dep.sh"
       - run: scp -o "StrictHostKeyChecking no" -r packages/docs/docs/.freepress/dist/* root@$DOCKER_IP:~/freepress/tmp
       - run: ssh -o "StrictHostKeyChecking no" root@$DOCKER_IP "~/freepress/after-dep.sh"
