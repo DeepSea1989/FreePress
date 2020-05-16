@@ -93,10 +93,10 @@ workflows:
           requires:
             - run-refresh
       - build-docs:
+          context: success
           requires:
             - install-dependencies
           filters:
             branches:
               only:
                 - 'master'
-          context: success
