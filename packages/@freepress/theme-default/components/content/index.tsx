@@ -1,5 +1,4 @@
 import React, { FunctionComponent } from 'react';
-import { Anchor } from 'antd';
 import EditButton from './EditButton';
 import moment from 'moment';
 import AvatarList from './AvatarList';

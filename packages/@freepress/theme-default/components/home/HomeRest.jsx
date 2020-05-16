@@ -1,22 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useSiteContext } from '@freepress/core';
 
 const homeRest = () => {
-  // useEffect(() => {
-  //   const container = this.refs['rest-content'];
-  //   if (!container) return;
-
-  //   const innerContent = container.querySelector(
-  //     '.home-markdown.markdown'
-  //   );
-  //   if (!innerContent) return;
-
-  //   if (innerContent.innerHTML === '') {
-  //     container.style.display = 'none';
-  //   } else {
-  //     container.style.display = 'block';
-  //   }
-  // });
   const {
     currentPageInfo: { Markdown }
   } = useSiteContext();

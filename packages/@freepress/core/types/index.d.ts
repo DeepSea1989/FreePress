@@ -26,7 +26,7 @@ interface SiteData {
   base?: string;
   pages?: Array<Page>;
   footer?: string;
-  lang?: string;
+  lang: string;
   serviceWorker?: boolean;
   updatePopup: {
     message?: string;
