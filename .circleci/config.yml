@@ -77,6 +77,7 @@ jobs:
       - run: npm run generate-with-prefix
       - run: echo $REMOTE_HOSTKEY
       - run: echo $RSA > ~/.ssh/id_rsa
+      - run: ssh-add ~/.ssh/id_dsa
       #- run: rm -rf ~/.ssh/id_rsa && rm -rf ~/.ssh/id_rsa.pub
       #- run: ssh-keygen -t rsa -C "deepsea1989@outlook.com" -N '' -f ~/.ssh/id_rsa -q
       #- run: ssh-copy-id -i ~/.ssh/id_rsa.pub root@119.3.77.250
