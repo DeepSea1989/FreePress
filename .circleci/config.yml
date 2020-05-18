@@ -75,14 +75,14 @@ jobs:
             - "b3:48:fb:25:46:3c:3a:3a:b5:9c:fe:2d:b5:7f:aa:2a"
 
       - run: npm run generate-with-prefix
-      - run: echo $REMOTE_HOSTKEY
-      - run: echo $RSA > ~/.ssh/id_rsa
-      - run: ssh-add -k ~/.ssh/id_rsa
+      #- run: echo $REMOTE_HOSTKEY
+      #- run: echo $RSA > ~/.ssh/id_rsa
+      #- run: ssh-add -k ~/.ssh/id_rsa
       #- run: rm -rf ~/.ssh/id_rsa && rm -rf ~/.ssh/id_rsa.pub
       #- run: ssh-keygen -t rsa -C "deepsea1989@outlook.com" -N '' -f ~/.ssh/id_rsa -q
       #- run: ssh-copy-id -i ~/.ssh/id_rsa.pub root@119.3.77.250
-      - run: echo $REMOTE_HOSTKEY > ~/.ssh/known_hosts
-      - run: echo $REMOTE_HOSTKEY > ~/.ssh/authorized_keys
+      #- run: echo $REMOTE_HOSTKEY > ~/.ssh/known_hosts
+      #- run: echo $REMOTE_HOSTKEY > ~/.ssh/authorized_keys
       #- run: cat ~/.ssh/known_hosts
       - run: ssh -o StrictHostKeyChecking=no root@119.3.77.250 "~/freepress/before-dep.sh"
       - run: scp -o StrictHostKeyChecking=no -r packages/docs/docs/.freepress/dist/* root@119.3.77.250:~/freepress/tmp
