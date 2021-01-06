@@ -28,7 +28,7 @@
     "@freepress/webpack": "^0.2.0",
     "@types/classnames": "^2.2.7",
     "@types/react-dom": "^16.8.4",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "chalk": "2.4.2",
     "change-case": "^3.1.0",
     "cheerio": "^1.0.0-rc.3",
