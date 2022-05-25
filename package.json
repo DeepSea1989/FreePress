@@ -132,7 +132,7 @@
     "less": "^3.8.1",
     "lodash": "^4.17.15",
     "mdast-util-to-string": "^1.0.5",
-    "node-fetch": "^2.5.0",
+    "node-fetch": "^3.1.1",
     "nprogress": "^0.2.0",
     "prism-react-renderer": "^0.1.7",
     "prismjs": "^1.15.0",
