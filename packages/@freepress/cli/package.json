@@ -16,7 +16,7 @@
     "@freepress/util": "^0.1.0",
     "chalk": "2.4.2",
     "commander": "2.19.0",
-    "cross-spawn": "6.0.5",
+    "cross-spawn": "6.0.6",
     "envinfo": "7.1.0",
     "fs-extra": "7.0.1",
     "hyperquest": "2.1.3",
